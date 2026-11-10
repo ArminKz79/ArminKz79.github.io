@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armin Karim Zadeh | آرمین کریم زاده</title>
+    <!-- آیکون‌های شبکه اجتماعی -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* هدر سبز آبی خوش‌رنگ بالای صفحه */
+        .hero-bg {
+            background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
+            width: 100%;
+            padding: 40px 20px 70px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+
+        .profile-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .profile-subtitle {
+            font-size: 1.5rem;
+            font-weight: 700;
+            opacity: 0.95;
+        }
+
+        /* کارت اصلی محتوا */
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            margin-top: -30px;
+            border-radius: 24px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #334155;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        /* شبکه‌های اجتماعی */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: #0d9488;
+            font-size: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.15);
+        }
+
+        /* دکمه‌های پروژه‌ها */
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 18px 20px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: 600;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+        }
+
+        .project-card:hover {
+            border-color: #0d9488;
+            background: #f0fdfa;
+            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08);
+        }
+
+        /* استایل پاورقی (Footer) */
+        .footer {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-bg">
+        <!-- لینک عکس پروفایل گیت‌هاب شما -->
+        <img src="https://github.com/ArminKz79.png" alt="Armin Karim Zadeh" class="avatar">
+        
+        <!-- نام فارسی روی یک خط -->
+        <h1 class="profile-title">آرمین کریم زاده</h1>
+        
+        <!-- نام انگلیسی روی خط بعدی -->
+        <h2 class="profile-subtitle">Armin Karim Zadeh</h2>
+    </div>
+
+    <div class="card">
+        <!-- عنوان شغلی -->
+        <p class="skills">
+            ایده پرداز و برنامه نویس با هوش مصنوعی
+        </p>
+
+        <!-- لینک شبکه‌های اجتماعی -->
+        <div class="social-links">
+            <a href="https://github.com/ArminKz79" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- دکمه پروژه اول: ترسیم دیاگرام سیم‌پیچی -->
+        <a href="https://arminkz79.github.io/winding-diagram-software/" class="project-card" target="_blank">
+            <span>📐 ترسیم دیاگرام سیم‌پیچی</span>
+        </a>
+
+        <!-- دکمه پروژه دوم: محاسبه سود محصول -->
+        <a href="#" class="project-card" target="_blank">
+            <span>🧮 محاسبه سود محصول</span>
+        </a>
+
+        <!-- دکمه پروژه سوم: محاسبه مالیات -->
+        <a href="#" class="project-card" target="_blank">
+            <span>💰 محاسبه مالیات</span>
+        </a>
+    </div>
+
+    <!-- فوتر (پاورقی) -->
+    <div class="footer">
+        Built with <span style="color: #ef4444;">❤️</span> on GitHub 2026 © Pages
+    </div>
+
+</body>
+</html>
